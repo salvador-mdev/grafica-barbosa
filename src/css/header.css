@@ -1,0 +1,158 @@
+.header .menu-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+}
+
+.header .menu-principal .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu-principal .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header .menu-principal .logo a h1,
+.header .menu-principal .logo a i {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    padding-right: 10px;
+}
+
+.header .menu-principal .barra-de-menu input {
+    display: none;
+}
+
+.header .menu-principal ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu-principal ul li {
+    
+    position: relative;
+    z-index: 3;
+}
+
+.header .menu-principal ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    padding: 21px 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.header .menu-principal ul > li a:hover {
+    color: #fff;
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 10px 0px rgba(196, 22, 9, 0.8);
+
+}
+
+.header .menu-principal ul > li #registro {
+    padding: 8px 24px;
+    margin-left: 15px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.header .menu-principal ul > li:last-child {
+    transition: 0.3s ease-in-out;
+}
+
+.header .menu-principal ul > li:last-child:hover {
+    transform: scale(1.07);
+}
+
+.header .menu-principal ul li > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    padding: 10px 0;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: -30px;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.header .menu-principal ul li ul li{
+    padding: 10px 0;
+    position: relative;
+}
+
+.header .menu-principal ul li ul li:hover {
+    transform: scale(1.05);
+}
+
+.header .menu-principal ul li ul li .submenu1 {
+    color: #000;
+    padding: 10px 38px;
+    font-size: 15px;
+}
+
+.header .menu-principal ul li ul li .submenu2 {
+    color: #000;
+    padding: 10px 38px;
+    font-size: 15px;
+}
+
+.header .menu-principal ul li ul li .submenu3 {
+    color: #000;
+    padding: 10px 38px;
+    font-size: 15px;
+}
+
+.header .menu-principal ul li ul li .submenu4 {
+    color: #000;
+    padding: 10px 38px;
+    font-size: 15px;
+}
+
+.header .menu-principal ul li ul li a:hover {
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
+
+.header .menu-principal ul li:nth-child(3) {
+    transition: 0.3s ease-in-out;
+}
+
+/* .header .menu-principal ul li:nth-child(3)::after {
+    content: url(../images/caret-down-solid.svg);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding-left: 5px;
+    padding-left: 5px;
+} */
+
+.header .menu-principal ul li:nth-child(3):hover ul{
+    visibility: visible;
+    top: 48px;
+}
+
+@media (max-width: 1050px) {
+    .header .bg .hero {
+        position: absolute;
+        top: 33%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        /* max-width: 800px; */
+        z-index: 2;
+    }
+}
