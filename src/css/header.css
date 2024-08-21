@@ -54,7 +54,7 @@
 .header .menu-principal ul > li a:hover {
     color: #fff;
     background-color: var(--cor-primaria);
-    box-shadow: 0px 0px 10px 0px rgba(196, 22, 9, 0.8);
+    box-shadow: 0px 0px 10px 0px rgb(30, 144, 255, 0.8);
 
 }
 
