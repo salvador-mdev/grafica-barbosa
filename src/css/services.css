@@ -1,0 +1,272 @@
+.services {
+    padding-top: 40px;
+}
+
+.services .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .titulo h2 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    padding-bottom: 15px;
+}
+
+.services .titulo span:first-child {
+    background-color: var(--cor-primaria);
+    display: block;
+    width: 35px;
+    height: 2px;
+    position: relative;
+    top: -12px;
+    right: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.services .titulo span:first-child::after {
+    background-color: var(--cor-primaria);
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 7px;
+    right: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.services .titulo span:last-child {
+    background-color: var(--cor-primaria);
+    display: block;
+    width: 35px;
+    height: 2px;
+    position: relative;
+    top: -12px;
+    right: -15px;
+    transition: 0.5s ease-in-out;
+}
+
+.services .titulo span:last-child::after {
+    background-color: var(--cor-primaria);
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 7px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.services > h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 24px;
+    color: #2c3e50;
+}
+
+.services .cards .card-1 {
+    display: grid;
+    grid-template-areas: "informacoes fotos";
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    margin: 0 100px;
+    padding: 30px 0;
+    border-top: 3px var(--cor-primaria) solid;
+    border-bottom: 3px var(--cor-primaria) solid;
+}
+
+.services .cards .informacoes {
+    grid-area: informacoes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .fotos {
+    grid-area: fotos;
+    
+}
+
+.services .cards .fotos .sub-grid {
+    display: grid;
+    grid-template-areas: "g-1 g-1 p-1 p-2" "g-1 g-1 g-2 g-2" "p-3 p-4 g-2 g-2";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 15px;
+}
+
+.services .cards .sub-grid .zoom-1 {
+    grid-area: g-1;
+}
+
+.services .cards .sub-grid .zoom-2 {
+    grid-area: g-2;
+}
+
+.services .cards .sub-grid .zoom-3 {
+    grid-area: p-1;
+}
+
+.services .cards .sub-grid .zoom-4 {
+    grid-area: p-2;
+}
+
+.services .cards .sub-grid .zoom-5 {
+    grid-area: p-3;
+}
+
+.services .cards .sub-grid .zoom-6 {
+    grid-area: p-4;
+}
+
+.services .cards .sub-grid .zoom-1,
+.services .cards .sub-grid .zoom-2,
+.services .cards .sub-grid .zoom-3,
+.services .cards .sub-grid .zoom-4,
+.services .cards .sub-grid .zoom-5,
+.services .cards .sub-grid .zoom-6 {
+    overflow: hidden;
+}
+
+.services .cards .sub-grid .zoom-1 .g-1 {
+    background: url(../images/foto-1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border: 4px solid rgb(66, 66, 66);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.services .cards .sub-grid .zoom-2 .g-2 {
+    background: url(../images/foto-2.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border: 4px solid rgb(66, 66, 66);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.services .cards .sub-grid .zoom-3 .p-1 {
+    background: url(../images/foto-2.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border: 4px solid rgb(66, 66, 66);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.services .cards .sub-grid .zoom-4 .p-2 {
+    background: url(../images/foto-2.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border: 4px solid rgb(66, 66, 66);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.services .cards .sub-grid .zoom-5 .p-3 {
+    background: url(../images/foto-1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border: 4px solid rgb(66, 66, 66);
+    transition: 0.3s ease-in-out;
+}
+
+.services .cards .sub-grid .zoom-6 .p-4 {
+    background: url(../images/foto-1.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border: 4px solid rgb(66, 66, 66);
+    transition: 0.3s ease-in-out;
+}
+
+.services .cards .sub-grid .zoom-1 .g-1:hover,
+.services .cards .sub-grid .zoom-2 .g-2:hover,
+.services .cards .sub-grid .zoom-3 .p-1:hover,
+.services .cards .sub-grid .zoom-4 .p-2:hover,
+.services .cards .sub-grid .zoom-5 .p-3:hover,
+.services .cards .sub-grid .zoom-6 .p-4:hover {
+    transform: scale(1.15);
+}
+
+.services .cards .informacoes i,
+.services .cards .fotos i,
+.services .cards .card3 i,
+.services .cards .card4 i {
+    color: var(--cor-primaria);
+    font-size: 100px;
+    padding-bottom: 24px;
+}
+
+.services .cards .informacoes h4 {
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.services .cards .informacoes p {
+    color: #808b8d;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+
+/* @media (max-width: 950px) {
+    .services .cards {
+        padding: 40px 60px;
+    }
+}
+
+@media (max-width: 850px) {
+    .services .cards {
+        display: grid;
+        grid-template-areas: "card1 card2" "card3 card4";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 260px);
+        grid-gap: 20px;
+        padding: 40px 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .services .cards {
+        display: grid;
+        grid-template-areas: "card1" "card2" "card3" "card4";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 210px);
+        grid-gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .services > h3 {
+        padding-bottom: 0;
+    }
+
+    .services .cards .card1,
+    .services .cards .card2,
+    .services .cards .card3,
+    .services .cards .card4 {
+        text-align: center;
+    }
+} */
