@@ -73,13 +73,12 @@
     grid-template-columns: 1fr 500px;
     grid-template-rows: 1fr;
     grid-gap: 20px;
-    margin: 0 100px;
-    padding: 30px 0;
-    border-top: 3px var(--cor-primaria) solid;
-    border-bottom: 3px var(--cor-primaria) solid;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    background-color: var(--cor-terciaria);
 }
 
-.services .cards .informacoes {
+.services .cards .card-1 .informacoes {
     grid-area: informacoes;
     display: flex;
     flex-direction: column;
@@ -87,136 +86,129 @@
     align-items: center;
 }
 
-.services .cards .fotos {
+.services .cards .card-1 .fotos {
     grid-area: fotos;
     
 }
 
-.services .cards .fotos .sub-grid {
+.services .cards .card-1 .fotos .sub-grid {
     display: grid;
-    grid-template-areas: "g-1 g-1 p-1 p-2" "g-1 g-1 g-2 g-2" "p-3 p-4 g-2 g-2";
+    grid-template-areas: "f-1-g f-1-g f-2-p1 f-2-p2" "f-1-g f-1-g f-2-g f-2-g" "f-1-p1 f-1-p2 f-2-g f-2-g";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 150px 150px 150px;
-    grid-gap: 15px;
+    grid-gap: 5px;
 }
 
-.services .cards .sub-grid .zoom-1 {
-    grid-area: g-1;
+.services .cards .card-1 .sub-grid .zoom-1 {
+    grid-area: f-1-g;
 }
 
-.services .cards .sub-grid .zoom-2 {
-    grid-area: g-2;
+.services .cards .card-1 .sub-grid .zoom-2 {
+    grid-area: f-2-g;
 }
 
-.services .cards .sub-grid .zoom-3 {
-    grid-area: p-1;
+.services .cards .card-1 .sub-grid .zoom-3 {
+    grid-area: f-2-p1;
 }
 
-.services .cards .sub-grid .zoom-4 {
-    grid-area: p-2;
+.services .cards .card-1 .sub-grid .zoom-4 {
+    grid-area: f-2-p2;
 }
 
-.services .cards .sub-grid .zoom-5 {
-    grid-area: p-3;
+.services .cards .card-1 .sub-grid .zoom-5 {
+    grid-area: f-1-p1;
 }
 
-.services .cards .sub-grid .zoom-6 {
-    grid-area: p-4;
+.services .cards .card-1 .sub-grid .zoom-6 {
+    grid-area: f-1-p2;
 }
 
-.services .cards .sub-grid .zoom-1,
-.services .cards .sub-grid .zoom-2,
-.services .cards .sub-grid .zoom-3,
-.services .cards .sub-grid .zoom-4,
-.services .cards .sub-grid .zoom-5,
-.services .cards .sub-grid .zoom-6 {
+.services .cards .card-1 .sub-grid .zoom-1,
+.services .cards .card-1 .sub-grid .zoom-2,
+.services .cards .card-1 .sub-grid .zoom-3,
+.services .cards .card-1 .sub-grid .zoom-4,
+.services .cards .card-1 .sub-grid .zoom-5,
+.services .cards .card-1 .sub-grid .zoom-6 {
     overflow: hidden;
+    border: 4px solid var(--cor-primaria);
 }
 
-.services .cards .sub-grid .zoom-1 .g-1 {
-    background: url(../images/foto-1.png) no-repeat;
+.services .cards .card-1 .sub-grid .zoom-1 .f-1-g {
+    background: url(../images/foto-1.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-primaria);
-    border: 4px solid rgb(66, 66, 66);
-    transition: 0.3s ease-in-out;
-    
+    transition: 0.3s ease-in-out;  
 }
 
-.services .cards .sub-grid .zoom-2 .g-2 {
-    background: url(../images/foto-2.png) no-repeat;
+.services .cards .card-1 .sub-grid .zoom-2 .f-2-g {
+    background: url(../images/foto-2.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-primaria);
-    border: 4px solid rgb(66, 66, 66);
-    transition: 0.3s ease-in-out;
-    
+    transition: 0.3s ease-in-out;    
 }
 
-.services .cards .sub-grid .zoom-3 .p-1 {
-    background: url(../images/foto-2.png) no-repeat;
+.services .cards .card-1 .sub-grid .zoom-3 .f-2-p1 {
+    background: url(../images/foto-2.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-primaria);
-    border: 4px solid rgb(66, 66, 66);
     transition: 0.3s ease-in-out;
-    
 }
 
-.services .cards .sub-grid .zoom-4 .p-2 {
-    background: url(../images/foto-2.png) no-repeat;
+.services .cards .card-1 .sub-grid .zoom-4 .f-2-p2 {
+    background: url(../images/foto-2.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-primaria);
-    border: 4px solid rgb(66, 66, 66);
     transition: 0.3s ease-in-out;
-    
 }
 
-.services .cards .sub-grid .zoom-5 .p-3 {
-    background: url(../images/foto-1.png) no-repeat;
+.services .cards .card-1 .sub-grid .zoom-5 .f-1-p1 {
+    background: url(../images/foto-1.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-primaria);
-    border: 4px solid rgb(66, 66, 66);
     transition: 0.3s ease-in-out;
 }
 
-.services .cards .sub-grid .zoom-6 .p-4 {
-    background: url(../images/foto-1.png) no-repeat;
+.services .cards .card-1 .sub-grid .zoom-6 .f-1-p2 {
+    background: url(../images/foto-1.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-primaria);
-    border: 4px solid rgb(66, 66, 66);
     transition: 0.3s ease-in-out;
 }
 
-.services .cards .sub-grid .zoom-1 .g-1:hover,
-.services .cards .sub-grid .zoom-2 .g-2:hover,
-.services .cards .sub-grid .zoom-3 .p-1:hover,
-.services .cards .sub-grid .zoom-4 .p-2:hover,
-.services .cards .sub-grid .zoom-5 .p-3:hover,
-.services .cards .sub-grid .zoom-6 .p-4:hover {
+.services .cards .card-1 .sub-grid .zoom-1 .f-1-g:hover,
+.services .cards .card-1 .sub-grid .zoom-2 .f-2-g:hover,
+.services .cards .card-1 .sub-grid .zoom-3 .f-2-p1:hover,
+.services .cards .card-1 .sub-grid .zoom-4 .f-2-p2:hover,
+.services .cards .card-1 .sub-grid .zoom-5 .f-1-p1:hover,
+.services .cards .card-1 .sub-grid .zoom-6 .f-1-p2:hover,
+.services .cards .card-2 .sub-grid .zoom-1 .f-1-g:hover,
+.services .cards .card-2 .sub-grid .zoom-2 .f-2-g:hover,
+.services .cards .card-3 .sub-grid .zoom-1 .f-h-1:hover,
+.services .cards .card-3 .sub-grid .zoom-2 .f-v-1:hover,
+.services .cards .card-3 .sub-grid .zoom-3 .f-v-2:hover,
+.services .cards .card-4 .sub-grid .zoom-1 .c-h-1:hover,
+.services .cards .card-4 .sub-grid .zoom-2 .c-h-2:hover,
+.services .cards .card-4 .sub-grid .zoom-3 .c-v-1:hover,
+.services .cards .card-4 .sub-grid .zoom-4 .c-v-2:hover {
     transform: scale(1.15);
 }
 
 .services .cards .informacoes i,
-.services .cards .fotos i,
 .services .cards .card3 i,
 .services .cards .card4 i {
-    color: var(--cor-primaria);
+    color: #2c3e50;
     font-size: 100px;
     padding-bottom: 24px;
 }
 
 .services .cards .informacoes h4 {
-    color: #2c3e50;
+    color: var(--cor-primaria);
     font-size: 20px;
     font-weight: 800;
     text-align: center;
@@ -231,42 +223,300 @@
     padding-bottom: 16px;
 }
 
+.services .cards .card-2 {
+    display: grid;
+    grid-template-areas: "fotos informacoes";
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    background-color: var(--cor-terciaria);
+}
 
-/* @media (max-width: 950px) {
-    .services .cards {
-        padding: 40px 60px;
+.services .cards .card-2 .informacoes {
+    grid-area: informacoes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .card-2 .fotos {
+    grid-area: fotos;
+    
+}
+
+.services .cards .card-2 .fotos .sub-grid {
+    display: grid;
+    grid-template-areas: "f-1-g" "f-2-g";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 15px;
+}
+
+.services .cards .card-2 .sub-grid .zoom-1 {
+    grid-area: f-1-g;
+}
+
+.services .cards .card-2 .sub-grid .zoom-2 {
+    grid-area: f-2-g;
+}
+
+.services .cards .card-2 .sub-grid .zoom-1,
+.services .cards .card-2 .sub-grid .zoom-2 {
+    overflow: hidden;
+    border: 4px solid var(--cor-primaria);
+
+}
+
+.services .cards .card-2 .sub-grid .zoom-1 .f-1-g {
+    background: url(../images/impressao-1.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.services .cards .card-2 .sub-grid .zoom-2 .f-2-g {
+    background: url(../images/impressao-2.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.services .cards .card-3 {
+    display: grid;
+    grid-template-areas: "informacoes fotos";
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    background-color: var(--cor-terciaria);
+}
+
+.services .cards .card-3 .informacoes {
+    grid-area: informacoes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .card-3 .fotos {
+    grid-area: fotos;
+    
+}
+
+.services .cards .card-3 .fotos .sub-grid {
+    display: grid;
+    grid-template-areas: "f-h-1 f-h-1" "f-v-1 f-v-2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 180px 300px;
+    grid-gap: 5px;
+}
+
+.services .cards .card-3 .sub-grid .zoom-1 {
+    grid-area: f-h-1;
+}
+
+.services .cards .card-3 .sub-grid .zoom-2 {
+    grid-area: f-v-1;
+}
+
+.services .cards .card-3 .sub-grid .zoom-3 {
+    grid-area: f-v-2;
+}
+
+.services .cards .card-3 .sub-grid .zoom-1,
+.services .cards .card-3 .sub-grid .zoom-2,
+.services .cards .card-3 .sub-grid .zoom-3 {
+    overflow: hidden;
+    border: 4px solid var(--cor-primaria);
+}
+
+.services .cards .card-3 .sub-grid .zoom-1 .f-h-1 {
+    background: url(../images/encadernacao-h-2.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
+
+.services .cards .card-3 .sub-grid .zoom-2 .f-v-1 {
+    background: url(../images/encadernacao-v-1.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;   
+}
+
+.services .cards .card-3 .sub-grid .zoom-3 .f-v-2 {
+    background: url(../images/encadernacao-v-2.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
+
+.services .cards .card-4 {
+    display: grid;
+    grid-template-areas: "fotos informacoes";
+    grid-template-columns: 550px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    background-color: var(--cor-terciaria);
+}
+
+.services .cards .card-4 .informacoes {
+    grid-area: informacoes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .card-4 .fotos {
+    grid-area: fotos;
+    
+}
+
+.services .cards .card-4 .fotos .sub-grid {
+    display: grid;
+    grid-template-areas: "c-v-1 c-h-1 c-h-1" "c-h-2 c-h-2 c-v-2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px;
+    grid-gap: 5px;
+}
+
+.services .cards .card-4 .sub-grid .zoom-1 {
+    grid-area: c-h-1;
+}
+
+.services .cards .card-4 .sub-grid .zoom-2 {
+    grid-area: c-h-2;
+}
+
+.services .cards .card-4 .sub-grid .zoom-3 {
+    grid-area: c-v-1;
+}
+
+.services .cards .card-4 .sub-grid .zoom-4 {
+    grid-area: c-v-2;
+}
+
+.services .cards .card-4 .sub-grid .zoom-1,
+.services .cards .card-4 .sub-grid .zoom-2,
+.services .cards .card-4 .sub-grid .zoom-3,
+.services .cards .card-4 .sub-grid .zoom-4 {
+    overflow: hidden;
+    border: 4px solid var(--cor-primaria);
+}
+
+.services .cards .card-4 .sub-grid .zoom-1 .c-h-1 {
+    background: url(../images/caneca-h-1.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
+
+.services .cards .card-4 .sub-grid .zoom-2 .c-h-2 {
+    background: url(../images/caneca-h-2.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;   
+}
+
+.services .cards .card-4 .sub-grid .zoom-3 .c-v-1 {
+    background: url(../images/caneca-v-1.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
+
+.services .cards .card-4 .sub-grid .zoom-4 .c-v-2 {
+    background: url(../images/caneca-v-2.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
+
+
+@media (max-width: 950px) {
+    .services .cards .card-1,
+    .services .cards .card-2,
+    .services .cards .card-3,
+    .services .cards .card-4 {
+        padding: 50px 60px;
     }
 }
 
 @media (max-width: 850px) {
-    .services .cards {
+    .services .cards .card-1,
+    .services .cards .card-2,
+    .services .cards .card-3,
+    .services .cards .card-4 {
         display: grid;
-        grid-template-areas: "card1 card2" "card3 card4";
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 260px);
+        grid-template-areas: "informacoes" "fotos";
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 1fr;
         grid-gap: 20px;
-        padding: 40px 60px;
+        padding: 50px 60px;
+        margin-bottom: 50px;
+        background-color: var(--cor-terciaria);
     }
 }
 
 @media (max-width: 550px) {
-    .services .cards {
+    .services .cards .card-1,
+    .services .cards .card-2,
+    .services .cards .card-3,
+    .services .cards .card-4 {
         display: grid;
-        grid-template-areas: "card1" "card2" "card3" "card4";
+        grid-template-areas: "informacoes" "fotos";
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 210px);
+        grid-template-rows: 250px 1fr;
         grid-gap: 20px;
-        padding: 40px 20px;
+        padding: 50px 30px;
+        margin-bottom: 50px;
+        background-color: var(--cor-terciaria);
     }
+}
 
-    .services > h3 {
-        padding-bottom: 0;
-    }
-
-    .services .cards .card1,
-    .services .cards .card2,
-    .services .cards .card3,
-    .services .cards .card4 {
+@media (max-width: 450px) {
+    .services .cards .informacoes h4 {
+        color: var(--cor-primaria);
+        font-size: 16px;
+        font-weight: 800;
         text-align: center;
+        padding-bottom: 8px;
     }
-} */
+    
+    .services .cards .informacoes p {
+        color: #808b8d;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .services .cards .card-4 .fotos .sub-grid {
+        display: grid;
+        grid-template-areas: "c-h-1" "c-v-1" "c-h-2" "c-v-2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 250px);
+        grid-gap: 10px;
+    }
+}

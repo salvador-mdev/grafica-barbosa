@@ -53,18 +53,6 @@ window.sr = ScrollReveal();
     distance: '-550px'
   });
 
-  sr.reveal('.services2', {
-    duration: 2500,
-    origin: 'rigth',
-    distance: '-550px'
-  });
-
-  sr.reveal('.services3', {
-    duration: 2500,
-    origin: 'rigth',
-    distance: '-550px'
-  });
-
   sr.reveal('.about-animation .img', {
     duration: 3500,
     origin: 'rigth',
@@ -95,25 +83,25 @@ window.sr = ScrollReveal();
   //   distance: '-300px'
   // });
 
-  sr.reveal('.services .card1', {
+  sr.reveal('.services .card-1', {
     duration: 2000,
     origin: 'top',
     distance: '-300px'
   });
   
-  sr.reveal('.services .card2', {
+  sr.reveal('.services .card-2', {
     duration: 2500,
     origin: 'top',
     distance: '-350px'
   });
 
-  sr.reveal('.services .card3', {
+  sr.reveal('.services .card-3', {
     duration: 3000,
     origin: 'top',
     distance: '-400px'
   });
 
-  sr.reveal('.services .card4', {
+  sr.reveal('.services .card-4', {
     duration: 3500,
     origin: 'top',
     distance: '-300px'
