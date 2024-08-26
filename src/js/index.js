@@ -107,6 +107,12 @@ window.sr = ScrollReveal();
     distance: '-300px'
   });
 
+  sr.reveal('.services .card-5', {
+    duration: 3500,
+    origin: 'top',
+    distance: '-300px'
+  });
+
   sr.reveal('.destinos .titulo', {
     duration: 1500,
     origin: 'rigth',

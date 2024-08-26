@@ -195,7 +195,10 @@
 .services .cards .card-4 .sub-grid .zoom-1 .c-h-1:hover,
 .services .cards .card-4 .sub-grid .zoom-2 .c-h-2:hover,
 .services .cards .card-4 .sub-grid .zoom-3 .c-v-1:hover,
-.services .cards .card-4 .sub-grid .zoom-4 .c-v-2:hover {
+.services .cards .card-4 .sub-grid .zoom-4 .c-v-2:hover,
+.services .cards .card-5 .sub-grid .zoom-1 .camisa-h-1:hover,
+.services .cards .card-5 .sub-grid .zoom-2 .camisa-v-1:hover,
+.services .cards .card-5 .sub-grid .zoom-3 .camisa-v-2:hover {
     transform: scale(1.15);
 }
 
@@ -212,6 +215,7 @@
     font-size: 20px;
     font-weight: 800;
     text-align: center;
+    text-transform: uppercase;
     padding-bottom: 8px;
 }
 
@@ -366,7 +370,7 @@
 .services .cards .card-4 {
     display: grid;
     grid-template-areas: "fotos informacoes";
-    grid-template-columns: 550px 1fr;
+    grid-template-columns: 580px 1fr;
     grid-template-rows: 1fr;
     grid-gap: 20px;
     padding: 50px 100px;
@@ -451,6 +455,80 @@
     transition: 0.3s ease-in-out; 
 }
 
+.services .cards .card-5 {
+    display: grid;
+    grid-template-areas: "informacoes fotos";
+    grid-template-columns: 1fr 550px;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    background-color: var(--cor-terciaria);
+}
+
+.services .cards .card-5 .informacoes {
+    grid-area: informacoes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .cards .card-5 .fotos {
+    grid-area: fotos;
+    
+}
+
+.services .cards .card-5 .fotos .sub-grid {
+    display: grid;
+    grid-template-areas: "camisa-h-1 camisa-h-1" "camisa-v-1 camisa-v-2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px 400px;
+    grid-gap: 5px;
+}
+
+.services .cards .card-5 .sub-grid .zoom-1 {
+    grid-area: camisa-h-1;
+}
+
+.services .cards .card-5 .sub-grid .zoom-2 {
+    grid-area: camisa-v-1;
+}
+
+.services .cards .card-5 .sub-grid .zoom-3 {
+    grid-area: camisa-v-2;
+}
+
+.services .cards .card-5 .sub-grid .zoom-1,
+.services .cards .card-5 .sub-grid .zoom-2,
+.services .cards .card-5 .sub-grid .zoom-3 {
+    overflow: hidden;
+    border: 4px solid var(--cor-primaria);
+}
+
+.services .cards .card-5 .sub-grid .zoom-1 .camisa-h-1 {
+    background: url(../images/camisas-h-1.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
+
+.services .cards .card-5 .sub-grid .zoom-2 .camisa-v-1 {
+    background: url(../images/camisas-v-1.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;   
+}
+
+.services .cards .card-5 .sub-grid .zoom-3 .camisa-v-2 {
+    background: url(../images/camisa-v-2-04.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out; 
+}
 
 @media (max-width: 950px) {
     .services .cards .card-1,
@@ -465,7 +543,8 @@
     .services .cards .card-1,
     .services .cards .card-2,
     .services .cards .card-3,
-    .services .cards .card-4 {
+    .services .cards .card-4,
+    .services .cards .card-5 {
         display: grid;
         grid-template-areas: "informacoes" "fotos";
         grid-template-columns: 1fr;
@@ -481,7 +560,8 @@
     .services .cards .card-1,
     .services .cards .card-2,
     .services .cards .card-3,
-    .services .cards .card-4 {
+    .services .cards .card-4,
+    .services .cards .card-5 {
         display: grid;
         grid-template-areas: "informacoes" "fotos";
         grid-template-columns: 1fr;
@@ -509,14 +589,19 @@
         text-align: center;
         padding-bottom: 16px;
     }
-}
-
-@media (max-width: 400px) {
     .services .cards .card-4 .fotos .sub-grid {
         display: grid;
         grid-template-areas: "c-h-1" "c-v-1" "c-h-2" "c-v-2";
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 250px);
+        grid-gap: 10px;
+    }
+
+    .services .cards .card-5 .fotos .sub-grid {
+        display: grid;
+        grid-template-areas: "camisa-h-1" "camisa-v-1" "camisa-v-2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 250px);
         grid-gap: 10px;
     }
 }

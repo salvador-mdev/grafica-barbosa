@@ -23,8 +23,7 @@
 .hero .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     padding: 0 40px;
     height: 100%;
     margin: 0 auto;
@@ -34,7 +33,7 @@
     font-size: 60px;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 16px;
+    margin: 120px 0 16px 0;
     text-align: center;
     z-index: 2;
 }
