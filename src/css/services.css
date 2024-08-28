@@ -540,7 +540,6 @@
     grid-template-rows: 1fr;
     grid-gap: 20px;
     padding: 50px 100px;
-    margin-bottom: 50px;
     background-color: var(--cor-terciaria);
 }
 
@@ -655,10 +654,6 @@
 
     .services .cards .card-1 {
         padding: 50px 30px 70px 30px;
-    }
-
-    .services .cards .card-6 {
-        margin-bottom: 0;
     }
 
     .services .cards .card-6 .fotos .sub-grid {
