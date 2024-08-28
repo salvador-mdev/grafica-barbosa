@@ -1,0 +1,118 @@
+.promocoes-maps {
+    display: grid;
+    grid-template-areas: "promocoes map";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.promocoes-maps .contato {
+    background: url(../images/testeeee-08.png) no-repeat top;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+.promocoes-maps .grid {
+    grid-area: promocoes;
+    height: 100%;
+}
+
+.promocoes-maps .contato .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promocoes-maps .contato h2 {
+    padding: 30px;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.promocoes-maps .contato p {
+    text-align: center;
+    padding: 0 25px 25px 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.promocoes-maps .contato .input-text {
+    margin: 20px auto;
+    width: 340px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px; 
+}
+
+.promocoes-maps .contato .btn {
+    width: 135px;
+    background-color: var(--cor-primaria);
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 39px;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+}
+
+.promocoes-maps .map {
+    width: 100%;
+    height: 100%;
+    grid-area: map;
+}
+
+.promocoes-maps .contato .btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+    .promocoes-maps {
+        display: grid;
+        grid-template-areas: "promocoes" "map";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .promocoes-maps .contato .input-text {
+        width: 300px;
+    }
+
+    .promocoes-maps .contato h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .promocoes-maps .contato .btn {
+        width: 120px;
+    }
+   
+    .promocoes-maps .contato p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .promocoes-maps .contato .input-text {
+        width: 250px;
+    }
+}

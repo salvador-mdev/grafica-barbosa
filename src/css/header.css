@@ -117,6 +117,18 @@
     font-size: 15px;
 }
 
+.header .menu-principal ul li ul li .submenu5 {
+    color: #000;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+
+.header .menu-principal ul li ul li .submenu6 {
+    color: #000;
+    padding: 10px 18px;
+    font-size: 15px;
+}
+
 .header .menu-principal ul li ul li a:hover {
     background-color: var(--cor-primaria);
     color: #fff;

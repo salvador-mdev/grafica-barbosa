@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/css/about.css">
     <link rel="stylesheet" href="src/css/services.css">
     <link rel="stylesheet" href="src/css/testimonials.css">
+    <link rel="stylesheet" href="src/css/promocoes-map.css">
     <link rel="stylesheet" href="src/css/footer.css">
 
     <script src="./src/js/scrollreveal.js"></script>
@@ -23,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header" id="home">
@@ -30,7 +32,6 @@
             <div class="menu-principal">
                 <div class="logo">
                     <a href="#">
-                        <!-- <div class="img"></div> -->
                          <img src="src/images/logo-grafica-barbosa.png" alt="logo">
                     </a>
                 </div>
@@ -48,12 +49,14 @@
                         <ul>
                             <li><a href="#home" id="home" class="home">Home</a></li>
                             <li><a href="#about" class="sobre">Sobre Nos</a></li>
-                            <li><a href="#servcos" class="servicos">Serviços</a>
+                            <li><a href="#s" class="servicos">Serviços</a>
                                 <ul>
-                                    <li><a href="#destinos" class="submenu1">Fotos 3x4</a></li>
-                                    <li><a href="#booking" class="submenu2">Impressão de documentos</a></li>
-                                    <li><a href="#travel" class="submenu3">Encadernaçao</a></li>
-                                    <li><a href="#testimonials" class="submenu4">Canecas personalizadas</a></li>
+                                    <li><a href="#foto3x4" class="submenu1">Fotos 3x4</a></li>
+                                    <li><a href="#impressao" class="submenu2">Impressão de documentos</a></li>
+                                    <li><a href="#encadernacao" class="submenu3">Encadernaçao</a></li>
+                                    <li><a href="#canecas" class="submenu4">Canecas personalizadas</a></li>
+                                    <li><a href="#bones" class="submenu5">Bones personalizados</a></li>
+                                    <li><a href="#camisas" class="submenu6">Camisas personalizadas</a></li>
                                 </ul>
                             </li>
                             <li><a href="#testemunhos" class="testemunho" id="testemunho">Testemunhos</a></li>        
@@ -84,7 +87,8 @@
                     <span></span>
                 </div>
                 <h3>Bem-vindos a <span>Gráfica Barbosa</span></h3>
-                <p>A Gráfica Barbosa é uma empresa especializada em serviços de impressão que combina qualidade e eficiência. Localizada no coração da cidade, oferecemos uma ampla variedade de soluções para atender às necessidades dos nossos clientes. Realizamos impressões de documentos, fotos 3x4, canecas personalizadas, personalização de camisas com estampado de alta qualidade. Nosso compromisso é garantir a satisfação do cliente com produtos de excelência e um atendimento personalizado. Venha nos conhecer e descubra como podemos ajudar no seu próximo projeto!</p>
+                <p>Somos uma empresa especializada em serviços de impressão que combina qualidade e eficiência. Localizada no coração da cidade, oferecemos uma ampla variedade de soluções para atender às necessidades dos nossos clientes.</p>
+                <p>Realizamos impressões de documentos, fotos 3x4, canecas personalizadas, personalização de camisas com estampado de alta qualidade. Nosso compromisso é garantir a satisfação do cliente com produtos de excelência e um atendimento personalizado. Venha nos conhecer e descubra como podemos ajudar no seu próximo projeto!</p>
                 <div class="vantagens">
                     <div class="list1">
                         <ul>
@@ -102,7 +106,7 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <a href="#">Read More</a>
+                    <a href="#">Leia Mais</a>
                 </div>
             </div> 
         </div>
@@ -118,7 +122,7 @@
         <h3>Nossos Seviços</h3>
 
         <div class="cards">
-            <div class="card-1">
+            <div class="card-1" id="foto3x4">
                 <div class="informacoes">
                     <i class="fas fa-camera"></i>
                     <h4>Foto 3x4 RG - CNH - ESCOLA - PESCA</h4>
@@ -148,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="card-2">
+            <div class="card-2" id="impressao">
                 <div class="informacoes">
                     <i class="far fa-file-word"></i>
                     <h4>Impressão de documentos</h4>
@@ -166,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="card-3">
+            <div class="card-3" id="encadernacao">
                 <div class="informacoes">
                     <i class="fas fa-book-open"></i>
                     <h4>Encadernaçao</h4>
@@ -187,7 +191,7 @@
                 </div>
             </div>
 
-            <div class="card-4">
+            <div class="card-4" id="canecas">
                 <div class="informacoes">
                     <i class="fas fa-coffee"></i>
                     <h4>Canecas Personalizadas</h4>
@@ -211,7 +215,7 @@
                 </div>
             </div>
 
-            <div class="card-5">
+            <div class="card-5" id="camisas">
                 <div class="informacoes">
                     <i class="fas fa-tshirt"></i>
                     <h4>Camisas estampadas</h4>
@@ -231,8 +235,91 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card-6" id="bones">
+                <div class="informacoes">
+                    <i class="fas fa-hat-cowboy-side"></i>
+                    <h4>Bones personalizados</h4>
+                    <p>Na Gráfica Barbosa, personalizamos camisas estampadas com alta qualidade e durabilidade. Seja para eventos, uniformes ou uso pessoal, oferecemos diversas opções de cores e modelos. Com estampas criativas e tecnologia de ponta, transformamos suas ideias em camisas únicas que destacam seu estilo.</p>
+                </div>
+                <div class="fotos">
+                    <div class="sub-grid">
+                        <div class="zoom-1">
+                            <div class="bone-video-1">
+                                <video controls width="600" autoplay muted>
+                                    <source src="src/videos/video-bone-1-mp4.mp4" type="video/mp4">
+                                    <source src="src/videos/video-bone-1-ogv.ogv" type="video/ogg">
+                                    <source src="src/videos/video-bone-1-webm.webm" type="video/webm">
+                            
+                                    <p>Esse navegador nao tem suporte a tag video</p>
+                                </video>
+                            </div>
+                        </div>
+                        <div class="zoom-2">
+                            <div class="bone-foto-1"></div>
+                        </div>
+                        <div class="zoom-3">
+                            <div class="bone-foto-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="promocoes-maps">
+        <div class="contato grid">
+            <form action="https://formsubmit.co/salvadormdev@gmail.com" method="POST">
+                <h2>Receba nossas promoçoes</h2>
+                <p>Inscreva-se para receber descontos exclusivos direto no seu e-mail!</p>
+                <div class="inputs">
+                    <input type="text" name="nome" value="" id="nome" placeholder="Nome" class="input-text">
+                    <input type="text" name="sobrenome" value="" id="sobrenome" placeholder="Sobrenome" class="input-text">
+                    <input type="text" name="email" value="" id="email" placeholder="Email" class="input-text">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d591.9342008188441!2d-59.1344663122642!3d-3.577642229719234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1724791751688!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+    </section>
+
+    <footer class="footer" id="contato">
+        <div class="container-footer">
+            <div class="footer-menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre Nos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="/"><i class="fas fa-map-marker-alt"></i>Endereço: Loram Ipsum</a></li>
+                    <li><a href="/"><i class="fas fa-phone-alt"></i>Fone: (92) 1234567890</a></li>
+                    <li><a href="/"><i class="fas fa-envelope"></i>Email : exemplo@gmail.com</a></li>
+                </ul>
+                <div class="redes">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://instagram.com/grafica.22barbosa" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="about">
+                <h2>Sobre Nos</h2>
+                <p>Somos uma empresa especializada em serviços de impressão que combina qualidade e eficiência. Localizada no coração da cidade, oferecemos uma ampla variedade de soluções para atender às necessidades dos nossos clientes.</p>
+            </div>
+        </div>
+        <div class="direitos-autorais">
+            <h5>2024 ® Grafica Barbosa – Todos os direitos reservados</h5>
+        </div>
+    </footer>
     
     <script src="./src/js/index.js"></script>
 </body>
